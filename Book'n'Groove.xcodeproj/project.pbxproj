@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		030891982A9BE7CF00B09F85 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030891972A9BE7CF00B09F85 /* Constants.swift */; };
 		03F9C0372A913437001C28BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F9C0362A913437001C28BD /* AppDelegate.swift */; };
 		03F9C0392A913437001C28BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F9C0382A913437001C28BD /* SceneDelegate.swift */; };
 		03F9C03B2A913437001C28BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F9C03A2A913437001C28BD /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		0004965CAD4B4390D3476C32 /* Pods-Book'n'Groove.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Book'n'Groove.debug.xcconfig"; path = "Target Support Files/Pods-Book'n'Groove/Pods-Book'n'Groove.debug.xcconfig"; sourceTree = "<group>"; };
+		030891972A9BE7CF00B09F85 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		03F9C0332A913437001C28BD /* Book'n'Groove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Book'n'Groove.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F9C0362A913437001C28BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03F9C0382A913437001C28BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +46,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		030891922A9BE6EA00B09F85 /* AppResourses */ = {
+			isa = PBXGroup;
+			children = (
+				03F9C0362A913437001C28BD /* AppDelegate.swift */,
+				03F9C0382A913437001C28BD /* SceneDelegate.swift */,
+			);
+			path = AppResourses;
+			sourceTree = "<group>";
+		};
+		030891932A9BE70200B09F85 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				03F9C03C2A913437001C28BD /* Main.storyboard */,
+				03F9C0442A913438001C28BD /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		030891942A9BE72B00B09F85 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				03F9C03A2A913437001C28BD /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		030891952A9BE73A00B09F85 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				030891972A9BE7CF00B09F85 /* Constants.swift */,
+				03F9C0422A913438001C28BD /* Assets.xcassets */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		030891962A9BE74700B09F85 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				03F9C03F2A913437001C28BD /* Book_n_Groove.xcdatamodeld */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		030891992A9BE7D500B09F85 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		03F9C02A2A913437001C28BD = {
 			isa = PBXGroup;
 			children = (
@@ -65,14 +117,13 @@
 		03F9C0352A913437001C28BD /* Book'n'Groove */ = {
 			isa = PBXGroup;
 			children = (
-				03F9C0362A913437001C28BD /* AppDelegate.swift */,
-				03F9C0382A913437001C28BD /* SceneDelegate.swift */,
-				03F9C03A2A913437001C28BD /* ViewController.swift */,
-				03F9C03C2A913437001C28BD /* Main.storyboard */,
-				03F9C0422A913438001C28BD /* Assets.xcassets */,
-				03F9C0442A913438001C28BD /* LaunchScreen.storyboard */,
+				030891922A9BE6EA00B09F85 /* AppResourses */,
+				030891962A9BE74700B09F85 /* DataBase */,
+				030891942A9BE72B00B09F85 /* ViewControllers */,
+				030891952A9BE73A00B09F85 /* SupportFiles */,
+				030891992A9BE7D500B09F85 /* Extensions */,
+				030891932A9BE70200B09F85 /* Storyboards */,
 				03F9C0472A913438001C28BD /* Info.plist */,
-				03F9C03F2A913437001C28BD /* Book_n_Groove.xcdatamodeld */,
 			);
 			path = "Book'n'Groove";
 			sourceTree = "<group>";
@@ -83,7 +134,6 @@
 				0004965CAD4B4390D3476C32 /* Pods-Book'n'Groove.debug.xcconfig */,
 				D7424017E98FCC522DBA6816 /* Pods-Book'n'Groove.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -192,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				030891982A9BE7CF00B09F85 /* Constants.swift in Sources */,
 				03F9C03B2A913437001C28BD /* ViewController.swift in Sources */,
 				03F9C0372A913437001C28BD /* AppDelegate.swift in Sources */,
 				03F9C0392A913437001C28BD /* SceneDelegate.swift in Sources */,
