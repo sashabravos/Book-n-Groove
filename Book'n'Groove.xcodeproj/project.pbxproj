@@ -14,9 +14,11 @@
 		03F9C0412A913437001C28BD /* Book_n_Groove.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03F9C03F2A913437001C28BD /* Book_n_Groove.xcdatamodeld */; };
 		03F9C0432A913438001C28BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F9C0422A913438001C28BD /* Assets.xcassets */; };
 		03F9C0462A913438001C28BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F9C0442A913438001C28BD /* LaunchScreen.storyboard */; };
+		5D02A7EA89DEA9F6C93717BA /* Pods_Book_n_Groove.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED957E255D2AB95F80102DA0 /* Pods_Book_n_Groove.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0004965CAD4B4390D3476C32 /* Pods-Book'n'Groove.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Book'n'Groove.debug.xcconfig"; path = "Target Support Files/Pods-Book'n'Groove/Pods-Book'n'Groove.debug.xcconfig"; sourceTree = "<group>"; };
 		03F9C0332A913437001C28BD /* Book'n'Groove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Book'n'Groove.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F9C0362A913437001C28BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03F9C0382A913437001C28BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		03F9C0422A913438001C28BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03F9C0452A913438001C28BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03F9C0472A913438001C28BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7424017E98FCC522DBA6816 /* Pods-Book'n'Groove.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Book'n'Groove.release.xcconfig"; path = "Target Support Files/Pods-Book'n'Groove/Pods-Book'n'Groove.release.xcconfig"; sourceTree = "<group>"; };
+		ED957E255D2AB95F80102DA0 /* Pods_Book_n_Groove.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Book_n_Groove.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D02A7EA89DEA9F6C93717BA /* Pods_Book_n_Groove.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				03F9C0352A913437001C28BD /* Book'n'Groove */,
 				03F9C0342A913437001C28BD /* Products */,
+				AEFE1F7602C080FEFF363A8B /* Pods */,
+				D6294E3FE5FA0277D99371B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,24 @@
 			path = "Book'n'Groove";
 			sourceTree = "<group>";
 		};
+		AEFE1F7602C080FEFF363A8B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0004965CAD4B4390D3476C32 /* Pods-Book'n'Groove.debug.xcconfig */,
+				D7424017E98FCC522DBA6816 /* Pods-Book'n'Groove.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D6294E3FE5FA0277D99371B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED957E255D2AB95F80102DA0 /* Pods_Book_n_Groove.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +102,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03F9C04A2A913438001C28BD /* Build configuration list for PBXNativeTarget "Book'n'Groove" */;
 			buildPhases = (
+				BFA37FECA8FEEA6B254F5726 /* [CP] Check Pods Manifest.lock */,
 				03F9C02F2A913437001C28BD /* Sources */,
 				03F9C0302A913437001C28BD /* Frameworks */,
 				03F9C0312A913437001C28BD /* Resources */,
@@ -135,6 +161,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BFA37FECA8FEEA6B254F5726 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Book'n'Groove-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		03F9C02F2A913437001C28BD /* Sources */ = {
@@ -286,6 +337,7 @@
 		};
 		03F9C04B2A913438001C28BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0004965CAD4B4390D3476C32 /* Pods-Book'n'Groove.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -319,6 +371,7 @@
 		};
 		03F9C04C2A913438001C28BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7424017E98FCC522DBA6816 /* Pods-Book'n'Groove.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
